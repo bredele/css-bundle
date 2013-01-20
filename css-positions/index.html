@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Vertical and Horizontal centering</title>
+		<style type="text/css">
+			body {
+				padding:40px;
+			}
+		  h1 {
+		  	margin:0;
+		  }
+		  .block {
+		  	background:red;
+		  	color:white;
+		  	margin:5px 0;
+		  }
+
+		  .inline {
+		  	background:green;
+		  	color:white;
+		  }
+		</style>
+		<link rel="stylesheet" href="relative.css">
+		<link rel="stylesheet" href="float.css">
+		<link rel="stylesheet" href="absolute.css">
+		<link rel="stylesheet" href="fixed.css">
+	</head>
+	<body>
+		<div>
+			<h1>Normal flow</h1>
+			<p>Normal flow is the way thats elemnts are displayed. Block and Inline elements are rendered in the order they've been written. Margin-left of block elements are aligned vertically with the margin-left of their container element.
+			Margin-left of inline elements are aligned "in-line" (horizontally) with sibling elements..</p>
+			<div class="block">block</div>
+			<div class="block">block</div>
+			<span class="inline">inline</span>
+			<span class="inline">inline</span>
+		</div>
+		<br>
+		<div>
+			<h1>Relative position</h1>
+			<p> Relative position allows you to move an element (top, right, bottom, left) relatively to its initial position.
+				Elements which have relative position are still in the normal flow : notice the second inline elements which is still in the same position as before (normal flow).</p>
+			<pre>ex: left:200px; top:-30px;</pre>
+			<div class="block">block</div>
+			<div class="block">block</div>
+			<span class="inline relative">inline</span>
+			<span class="inline">inline</span>
+		</div>
+		<br>
+		<div>
+			<h1>Floating elements</h1>
+			<p>Floating elements are take out the normal flow. The margins are ligned up with the margin left or right of the container element (float:left; or float:right;).The following elements are placed in the empty space of the normal flow.</p>
+			<pre>ex: float:right;</pre>
+			<div class="block">block</div>
+			<div class="block float">block</div>
+			<span class="inline">inline</span>
+			<span class="inline">inline</span>
+		</div>
+		<br>
+		<div id="absolute-container" class="relative-container">
+			<h1>Absolute position</h1>
+			<input id="container" type="checkbox" checked="true"/>
+			<label for="container">Container with position</label> 
+			<p>Absolute position allows you to place your element (top, right, bottom, left) according to the first positioned parent element.</p>
+			<pre>ex: top:0;right:0;</pre>
+			<div class="block">block</div>
+			<div class="block">block</div>
+			<span class="inline">inline</span>
+			<span class="inline absolute">inline</span>
+		</div>
+		<br>
+		<div>
+			<h1>Fixed position</h1>
+			<p>Fixed position allows you to plce your element (top, right, bototm, left) according to the window wiewport.</p>
+			<pre>ex: bottom:0;left:0;</pre>
+			<div class="fixed">fixed</div>
+		</div>
+		<script type="text/javascript">
+		  var positioned = true,
+		  	  container = document.getElementById("absolute-container");
+
+		  document.getElementById("container").addEventListener("click", function(event){
+		  	if(positioned){
+		  		container.className = ""
+		  	} else {
+		  		container.className = "relative-container";
+		  	}
+		  	positioned = !positioned;
+		  });
+		</script>
+	</body>
+</html>

@@ -1,7 +1,7 @@
 css-bundle
 ==========
 
-This is a bundle of CSS tips that have been very helpful in my projects.
+This is a bundle of CSS tips that have been very helpful in my projects. 
 
 ## Vertical and Horizontal centering 
 
@@ -35,3 +35,7 @@ body {
 ```
 This tip comes from a talented web designer named Raphaël Goetter: http://lab.goetter.fr/post/37906297786/centrer-un-site-verticalement-et-horizontalement.
 
+
+## CSS positions
+
+The position's base : a must know!

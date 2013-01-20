@@ -1,0 +1,7 @@
+.fixed {
+	position:fixed;
+	background:black;
+	color:white;
+	bottom:0;
+	right:0;
+}

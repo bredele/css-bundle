@@ -1,0 +1,10 @@
+.relative-container {
+	position:relative;
+}
+.absolute {
+	position:absolute;
+	top:0;
+	right:0;
+	background:orange;
+	color:black;
+}
