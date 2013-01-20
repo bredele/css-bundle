@@ -1,0 +1,25 @@
+html, body {
+  margin: 0; 
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display : table;
+  height: 100%;
+  width:100%;
+  behavior: url(display-table.min.htc);
+}    
+
+
+header, footer{
+  display : table-row;
+  height: 100px;
+  background: black;
+  color:white;
+}
+
+.content {
+  display : table-row;
+}
+

@@ -5,6 +5,8 @@ This is a bundle of CSS tips that have been very helpful in my projects.
 
 ## Vertical and Horizontal centering 
 
+https://github.com/bredele/css-bundle/tree/master/vertical-centering
+
 Trying to center elements vertically and horizontally is a real puzzle and the internet is not realy 
 helpful in this task. 
 
@@ -35,7 +37,15 @@ body {
 ```
 This tip comes from a talented web designer named Raphaël Goetter: http://lab.goetter.fr/post/37906297786/centrer-un-site-verticalement-et-horizontalement.
 
-
 ## CSS positions
 
+https://github.com/bredele/css-bundle/tree/master/css-positions
+
 The position's base : a must know!
+
+## Sticky footer
+
+https://github.com/bredele/css-bundle/tree/master/sticky-footer
+
+A cross-browser solution (works since IE8) based on display:table. No extra markup, no clearfix, a flexible content height and just a couple of lines.
+
