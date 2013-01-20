@@ -49,3 +49,31 @@ https://github.com/bredele/css-bundle/tree/master/sticky-footer
 
 A cross-browser solution (works since IE8) based on display:table. No extra markup, no clearfix, a flexible content height and just a couple of lines.
 
+```css
+
+html, body {
+  margin: 0; 
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  display : table;
+  height: 100%;
+  width:100%;
+  behavior: url(display-table.min.htc);
+}
+
+header, footer{
+  display : table-row;
+  height: 100px;
+}
+
+.content {
+  display : table-row;
+}
+
+```
+
+This css use the behavior attribute to load a polyfill library intended to emulate CSS properties of display: table* family in Internet Explorer 6 and 7.
+
