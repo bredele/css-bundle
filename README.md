@@ -77,3 +77,22 @@ header, footer{
 
 This css use the behavior attribute to load a polyfill library intended to emulate CSS properties of display: table* family in Internet Explorer 6 and 7.
 
+## Text wrapping
+
+https://github.com/bredele/css-bundle/tree/master/text-overflow
+
+There is a simple way to determine what should happen when the text overflows the containing element : the text-overflow property.
+
+
+This property allows to display an ellipsis, a clip or a string...and you don't need JavaScript.
+
+```css
+
+.ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+```
+Things become difficult when you try to overflow a block of multi-lines. 
