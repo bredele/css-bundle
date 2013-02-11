@@ -96,3 +96,23 @@ This property allows to display an ellipsis, a clip or a string...and you don't 
 
 ```
 Things become difficult when you try to overflow a block of multi-lines. 
+
+## Flexible box layout
+
+https://github.com/bredele/css-bundle/tree/master/flexbox
+
+You will find lots of dynamic or flexible layout for your website. 
+Most of them are just like a plate of spaghetti. I really like meat balls but not in my code! Float positionning with relative margin, clearfix, extra markups...berk!
+
+Thanksfully, new specifications describe a flexible box model optimized (i.e. less css, more maintainable) for user interface design. You can use it with the property display : flex.
+
+```css
+  display:-webkit-flex;
+  display:flex;
+```
+
+In this model, the children of a flex container can be laid out in any direction and can flex their sizes, fill unused space, etc. See http://www.w3.org/TR/css3-flexbox/ for more information.
+
+I tried in this repository to gather useful layout using flexbox.
+
+

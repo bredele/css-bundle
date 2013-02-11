@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Flexbox toolbar</title>
+		<link rel="stylesheet" href="toolbar.css">
+		<style type="text/css">
+			header{
+				width:500px; height:52px;
+				padding:0 10px; margin-bottom:100px;
+				background:#4D4D4D; color:white;
+			}
+			header:hover {
+				height:104px;
+				cursor:pointer;
+			}
+			button {
+				height:28px;
+				border:0;
+			}
+
+			.bad .left {
+				float:left;
+				margin-top:12px;
+			}
+			.bad .title {
+				display:block;
+				text-align: center;
+				line-height: 28px;
+				padding-top:12px;
+			}
+			.bad .right {
+				float:right;
+				margin-top:12px;
+			}
+		</style>
+	</head>
+	<body>
+		<details>
+			You will find 3 examples of toolbar. If you mouse over each toolbar you'll see that the first
+			solution is not maintanable when the height changes.
+			Flexbox allows you with just a few lines to have a maintanable toolbar layout.
+		</details>
+		<h2>BAD** Float positionning and fixed margin</h2>
+		<header class="bad">
+			<button class="left">left</button>
+			<button class="right">right</button>
+			<span class="title">title</span>			
+		</header>
+		<h2>GOOD** Flexbox with space between</h2>
+		<header class="flex space">
+			<button class="left">left</button>
+			<span class="title">title</span>
+			<button class="right">right</button>
+		</header>
+		<h2>GOOD** Flexbox with margin auto</h2>
+		<header class="flex margin">
+			<button class="left">left</button>
+			<span class="title">title</span>
+			<button class="right">right</button>
+		</header>
+	</body>
+</html>

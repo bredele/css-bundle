@@ -1,0 +1,16 @@
+.flex {
+	display:-webkit-flex;
+	display:flex;
+
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.flex.space {
+	justify-content:space-between;
+	-webkit-justify-content:space-between;
+}
+
+.flex.margin .title {
+	margin:0 auto;
+}
