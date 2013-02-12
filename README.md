@@ -125,7 +125,7 @@ https://github.com/bredele/css-bundle/tree/master/flexbox
 You will find lots of dynamic or flexible layout for your website. 
 Most of them are just like a plate of spaghetti. I really like meat balls but not in my code! Float positionning with relative margin, clearfix, extra markups...berk!
 
-Thanksfully, new specifications describe a flexible box model optimized (i.e. less css, more maintainable) for user interface design. You can use it with the property display : flex.
+Thankfully, new specifications describe a flexible box model optimized (i.e. less css, more maintainable) for user interface design. You can use it with the property display : flex.
 
 ```css
   display:-webkit-flex;
