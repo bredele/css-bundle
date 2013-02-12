@@ -1,0 +1,101 @@
+html, body{
+	height: 100%;
+	margin:0; padding:0;
+}
+
+h1 {
+	margin:0; padding:0;
+}
+/*body {
+	display: -webkit-flex;
+	-webkit-flex-flow: row wrap;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+header, footer {
+	height:100px;
+}
+
+header, footer {
+	background:orange;
+	-webkit-flex: 1 100%;
+	flex: 1 100%;
+}
+
+section {
+	background:#800000;
+	-webkit-flex: 1 600px;
+	flex: 1 600px;
+}
+
+aside {
+	background:#FF3399;
+	-webkit-flex: 1 300px;
+	flex: 1 300px;
+}
+*/
+
+/* almost */
+/*body {
+	display: -webkit-flex;
+	-webkit-flex-direction: column;
+	display: flex;
+	flex-direction: column;
+}
+
+header, footer {
+	background:orange;
+	height:100px;
+}
+
+section {
+	background:#800000;
+	-webkit-flex: 1 600px;
+	flex: 1 600px;
+}
+
+aside {
+	background:#FF3399;
+	margin:auto;
+}*/
+
+body {
+	display: -webkit-flex;
+	-webkit-flex-flow: column;
+	display: flex;
+	flex-flow: column;
+	-webkit-align-self: flex-start;
+}
+
+header, footer {
+	max-height: 100px;
+}
+
+/*header {
+	-webkit-align-self: flex-start;
+}
+
+footer {
+	-webkit-align-self: flex-end;
+}*/
+
+
+header, footer {
+	background:orange;
+	-webkit-flex: 1 100%;
+	flex: 1 100%;
+}
+
+section {
+	background:#800000;
+	-webkit-flex: 0 600px;
+	flex: 1 600px;
+}
+
+aside {
+	background:#FF3399;
+	-webkit-flex: 1 300px;
+	flex: 1 300px;
+}
+

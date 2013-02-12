@@ -37,6 +37,27 @@ body {
 ```
 This tip comes from a talented web designer named Raphaël Goetter: http://lab.goetter.fr/post/37906297786/centrer-un-site-verticalement-et-horizontalement.
 
+Here an other vertical centering demo with a flexible box layout:
+
+```css
+
+html, body {
+  height:100%;
+}
+body{
+  display:-webkit-flex;
+  display:flex;
+
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.vertical {
+  margin:0 auto;
+}
+
+```
+
 ## CSS positions
 
 https://github.com/bredele/css-bundle/tree/master/css-positions

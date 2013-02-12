@@ -1,0 +1,14 @@
+html, body {
+	height:100%;
+}
+body{
+	display:-webkit-flex;
+	display:flex;
+
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.vertical {
+	margin:0 auto;
+}
