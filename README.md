@@ -134,6 +134,6 @@ Thanksfully, new specifications describe a flexible box model optimized (i.e. le
 
 In this model, the children of a flex container can be laid out in any direction and can flex their sizes, fill unused space, etc. See http://www.w3.org/TR/css3-flexbox/ for more information.
 
-I tried in this repository to gather useful layout using flexbox.
+I tried in this repository to gather useful layout using flexbox. The first one (website.html) is a responsive layout for your website with header, section, aside and footer.
 
 
