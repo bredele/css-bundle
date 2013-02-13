@@ -156,4 +156,16 @@ body {
 
 The background color of the parent element (here the body) has to be the same than one of the text-shadow (here the first one). The fake inset shadow is visible under slightly transparent text.
 
+**Note**: With webkit you can play with -webkit-mask-image to apply gradient color to your text. 
 
+## Icon fonts
+
+https://github.com/bredele/css-bundle/tree/master/icon-fonts
+
+I absolutely love icon fonts. If you need simple icons for your application such as home, delete, clear, etc ... icon fonts are the best for the following reasons:
+  - it is scalable (icons fonts are vector which is great for hight ppi displays)
+  - it is 100% accessible
+  - it is optimized and lightweight
+  - you can apply any CSS effect that is appliable to text
+
+For most of your needs icon-fonts are largely suffisent (see http://css-tricks.com/flat-icons-icon-fonts/).
