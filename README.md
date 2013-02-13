@@ -136,4 +136,24 @@ In this model, the children of a flex container can be laid out in any direction
 
 I tried in this repository to gather useful layout using flexbox. The first one (website.html) is a responsive layout for your website with header, section, aside and footer.
 
+## Inset text-shadow
+
+https://github.com/bredele/css-bundle/tree/master/inset-text-shadow
+
+At the opposite of box-shadow, text-shadow doesn't have an inset property. However, it is possible to get the same effect : 
+
+```css
+body { 
+  background: white;
+}
+
+
+.inset {
+  color:rgba(0,0,0,.6);
+  text-shadow: 1px 4px 6px white, 0 0 0 #000;
+}
+```
+
+The background color of the parent element (here the body) has to be the same than one of the text-shadow (here the first one). The fake inset shadow is visible under slightly transparent text.
+
 
