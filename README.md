@@ -183,4 +183,4 @@ An example of facebook-like navigation using CSS3 translate3d.
   -o-transform:translate3d(180px,0,0);
   transform:translate3d(180px,0,0);
 ```
-I used hardware accelerated css for optimal quality on both desktop and mobile interface. The translate3d property is the only sure way to trigger hardware acceleration. See http://bredele.tumblr.com/post/43477636846/html5-dom-and-css3-high-performance.
+I used hardware accelerated css for optimal quality on both desktop and mobile interfaces. The translate3d property is the only sure way to trigger hardware acceleration. See http://bredele.tumblr.com/post/43477636846/html5-dom-and-css3-high-performance.
