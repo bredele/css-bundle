@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS transform</title>
+        <meta id="mobile" name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0">
+        <meta name="author" content="Olivier Wietrich">
+        <link rel="stylesheet" href="translate.css">
+        <style type="text/css">
+        html, body {
+            margin:0; padding:0;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-user-select: none;
+        }
+
+        body {
+            font-family:Arial;
+            background:#4D4D4D;
+        }
+
+        a {
+            text-decoration:none;
+            color:white;
+        }
+
+        @font-face {
+            font-family: 'transform';
+            src:url('fonts/transform.eot');
+            src:url('fonts/transform.eot?#iefix') format('embedded-opentype'),
+            url('fonts/transform.woff') format('woff'),
+            url('fonts/transform.ttf') format('truetype'),
+            url('fonts/transform.svg#transform') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        /* Use the following CSS code if you want to use data attributes for inserting your icons */
+        [data-icon]:before {
+            font-family: 'transform';
+            content: attr(data-icon);
+            speak: none;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
+
+
+        .icon-untitled:before {
+            font-family: 'transform';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            line-height: 1;
+            -webkit-font-smoothing: antialiased;
+        }
+        .icon-untitled:before {
+            content: "\23";
+        }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#blog">Blog</a>
+            <a href="#about">About</a>
+        </nav>
+        <section>
+            <header>
+                <div class="fs1" aria-hidden="true" data-icon="#"></div>
+            </header>
+        </section>
+        <script type="text/javascript">
+            document.querySelector(".fs1").addEventListener("click", function(){
+                document.querySelector("section").classList.toggle("toggle");
+            });
+        </script>
+    </body>
+</html>

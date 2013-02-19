@@ -169,3 +169,18 @@ I absolutely love icon fonts. If you need simple icons for your application such
   - you can apply any CSS effect that is appliable to text
 
 For most of your needs icon-fonts are largely suffisent (see http://css-tricks.com/flat-icons-icon-fonts/).
+
+## CSS3 transform
+
+https://github.com/bredele/css-bundle/tree/master/css-transform
+
+An example of facebook-like navigation using CSS3 translate3d.
+
+```css
+  -webkit-transform:translate3d(180px,0,0);
+  -moz-transform:translate3d(180px,0,0);
+  -ms-transform:translate3d(180px,0,0);
+  -o-transform:translate3d(180px,0,0);
+  transform:translate3d(180px,0,0);
+```
+I used hardware accelerated css for optimal quality on both desktop and mobile interface. The translate3d property is the only sure way to trigger hardware acceleration. See http://bredele.tumblr.com/post/43477636846/html5-dom-and-css3-high-performance.
