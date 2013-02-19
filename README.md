@@ -176,7 +176,7 @@ https://github.com/bredele/css-bundle/tree/master/css-transform
 
 An example of facebook-like navigation using CSS3 translate3d.
 
-```css
+```css∏
   -webkit-transform:translate3d(180px,0,0);
   -moz-transform:translate3d(180px,0,0);
   -ms-transform:translate3d(180px,0,0);
@@ -184,3 +184,23 @@ An example of facebook-like navigation using CSS3 translate3d.
   transform:translate3d(180px,0,0);
 ```
 I used hardware accelerated css for optimal quality on both desktop and mobile interfaces. The translate3d property is the only sure way to trigger hardware acceleration. See http://bredele.tumblr.com/post/43477636846/html5-dom-and-css3-high-performance.
+
+## CSS3 scoped attribute
+
+https://github.com/bredele/css-bundle/tree/master/css-scoped
+
+The CSS scoped attribute allows developers to apply styles to only the host element and descendant elements (it overrides the document stylesheet but not inline styles).
+
+```html
+<div class="child"></div>
+<div class="wrapper">
+  <style scoped>
+    .child {
+      background:red;
+    }
+  </style>
+  <div class="child"></div>
+</div>
+```
+ Here's a post I wrote about it: http://bredele.tumblr.com/post/43489520580/better-widgets-with-shadow-dom-and-css-scoped.
+ 
