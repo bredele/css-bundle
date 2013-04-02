@@ -1,7 +1,8 @@
 css-bundle
 ==========
 
-This is a bundle of CSS tips that have been very helpful in my projects. 
+> This is a bundle of CSS tips that have been very helpful in my projects. 
+
 
 ## Vertical and Horizontal centering 
 
