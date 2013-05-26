@@ -17,7 +17,7 @@ A solutions exists since the development of CSS2 thanks to display:table (and it
 ```css
 
 html {
-	display: table;
+	display: table 'hello';
 	table-layout: fixed;
 	width: 100%; height: 100%;
 }
